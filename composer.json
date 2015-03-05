@@ -9,6 +9,12 @@
         "framework",
         "nooku"
     ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "/home/vagrant/Projects/joomla-todo"
+    }
+  ],
     "homepage": "https://github.com/nooku/joomla-todo",
     "authors": [
         {

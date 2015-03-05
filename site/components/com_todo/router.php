@@ -30,7 +30,9 @@ function TodoBuildRoute(&$query)
 
         $items = JApplication::getInstance('site')->getMenu()->getItems($attributes, $values);
 
+        if(count($items))
         $query['Itemid'] = $items[0]->id;
+
 
     }
 
