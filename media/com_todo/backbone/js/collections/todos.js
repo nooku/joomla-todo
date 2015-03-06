@@ -14,15 +14,7 @@ var app = app || {};
 		model: app.Todo,
 
         url: '/component/todo/items',
-		// Save all of the todo items under the `"todos"` namespace.
-		//localStorage: new Backbone.LocalStorage('todos-backbone'),
 
-        _fetch: function(){
-
-            options.success = function(resp){
-                console.log(resp);
-            }
-        },
 		// Filter down the list of all todo items that are finished.
 		completed: function () {
 			return this.where({completed: true});
