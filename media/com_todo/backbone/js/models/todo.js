@@ -15,7 +15,7 @@ var app = app || {};
 			title: '',
 			completed: false
 		},
-        urlRoot: '/component/todo/item/',
+        // urlRoot: '/component/todo/item/',
 		// Toggle the `completed` state of this todo item.
 		toggle: function () {
 			this.save({

@@ -31,7 +31,7 @@
     </div>
     <input class="edit" value="<%- title %>">
 </script>
-<script data-inline type="text/template" id="stats-template" data-inline>
+<script data-inline type="text/template" id="stats-template">
     <span id="todo-count"><strong><%= remaining %></strong> <%= remaining === 1 ? 'item' : 'items' %> left</span>
     <ul id="filters">
         <li>
