@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: CAMERON
- * Date: 5/03/2015
- * Time: 7:05 AM
- */
 
 class ComTodoViewBehaviorBackbone extends KViewBehaviorAbstract
 {
