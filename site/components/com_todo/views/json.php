@@ -2,24 +2,24 @@
 /**
  * Created by PhpStorm.
  * User: CAMERON
- * Date: 5/03/2015
- * Time: 7:05 AM
+ * Date: 27/03/2015
+ * Time: 7:13 AM
  */
 
-class ComTodoViewBehaviorBackbone extends KViewBehaviorAbstract
+class ComTodoViewJson extends KViewJson
 {
 
-    public function _beforeRender($context)
+    function _renderData()
     {
-        $view = $this->getMixer();
-        // lets get the data from the model.
-        $data = $view->getModel()->fetch();
+
+        $data = $this->getModel()->fetch();
         $result = array();
 
         // if we are getting a collection, make sure we build an array for backbone
-        // Check if the model state is unique instead of $view->isCollection(), it checks the plurality of the view. We don't want that.
+        // Check if the model state is unique instead of $view->isCollection(), it checks the plurality of the view.
+        // We don't want that.
 
-        if($view->getModel()->getState()->isUnique())
+        if($this->getModel()->getState()->isUnique())
         {
             // extract the properties of the row object
             $result = $data->getProperties();
@@ -29,8 +29,6 @@ class ComTodoViewBehaviorBackbone extends KViewBehaviorAbstract
         else $result = array_values($data->toArray());
 
         // set the content of the view.
-        $view->setContent($result);
-
+        $this->setContent($result);
     }
-
 }

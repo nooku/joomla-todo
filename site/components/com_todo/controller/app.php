@@ -6,7 +6,4 @@
  * Time: 4:55 PM
  */
 
-class ComTodoControllerApp extends ComKoowaControllerView
-{
-
-}
+class ComTodoControllerApp extends KControllerView {}
