@@ -13,7 +13,7 @@ var app = app || {};
 		// Reference to this collection's model.
 		model: app.Todo,
 
-        url: '/component/todo/items',
+        url: '/component/todo/tasks',
 
 		// Filter down the list of all todo items that are finished.
 		completed: function () {
