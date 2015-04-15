@@ -23,7 +23,7 @@ class ComTodoTemplateHelperBehavior extends ComKoowaTemplateHelperBehavior
         $config = new KObjectConfigJson($config);
         $config->append(array(
             'selector' => '.todo-deletable',
-            'confirm_message' => $this->getObject('translator')->translate('You will not be able to bring this item back if you delete it. Would you like to continue?'),
+            'confirm_message' => $this->getObject('translator')->translate('You will not be able to bring this task back if you delete it. Would you like to continue?'),
         ));
 
         $html = $this->koowa();

@@ -32,8 +32,6 @@ function TodoBuildRoute(&$query)
 
         if(count($items))
         $query['Itemid'] = $items[0]->id;
-
-
     }
 
     if(isset($query['view']))
@@ -68,7 +66,7 @@ function TodoParseRoute($segments)
         $vars['id'] = $segments[1];
     }
 
-    $menu      = JFactory::getApplication()->getMenu()->getActive();
+    $menu = JFactory::getApplication()->getMenu()->getActive();
     if (isset($menu->query['layout'])) {
         $vars['layout'] = $menu->query['layout'];
     }

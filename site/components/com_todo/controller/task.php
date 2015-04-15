@@ -8,17 +8,14 @@
  * @link        https://github.com/nooku/joomla-todo for the canonical source repository
  */
 
-class ComTodoVersion extends KObject
+class ComTodoControllerTask extends ComKoowaControllerModel
 {
-    const VERSION = '1.1.0';
+	protected function _initialize(KObjectConfig $config)
+	{
+		$config->append(array(
+			'formats'   => array('json')
+		));
 
-    /**
-     * Get the version
-     *
-     * @return string
-     */
-    public function getVersion()
-    {
-        return self::VERSION;
-    }
+		parent::_initialize($config);
+	}
 }

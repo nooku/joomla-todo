@@ -8,17 +8,7 @@
  * @link        https://github.com/nooku/joomla-todo for the canonical source repository
  */
 
-class ComTodoVersion extends KObject
+class ComTodoModelEntityTask extends KModelEntityRow
 {
-    const VERSION = '1.1.0';
 
-    /**
-     * Get the version
-     *
-     * @return string
-     */
-    public function getVersion()
-    {
-        return self::VERSION;
-    }
 }

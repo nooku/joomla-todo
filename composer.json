@@ -2,7 +2,7 @@
     "name": "nooku/joomla-todo",
     "type": "joomla-extension",
     "license": "GPLv3",
-    "description": "Example item list Joomla extension build using Nooku Framework",
+    "description": "Example task list Joomla extension build using Nooku Framework",
     "keywords": [
         "joomla",
         "extension",
