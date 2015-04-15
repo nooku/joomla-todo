@@ -8,14 +8,13 @@
  * @link        https://github.com/nooku/joomla-todo for the canonical source repository
  */
 
-defined('_JEXEC') or die;
-
-JLoader::register('PlgKoowaFinder', JPATH_ROOT.'/libraries/koowa/plugins/koowa/finder.php');
-
 /**
- * Joomla smart search plugin for Todo
+ * Task Controller
+ *
+ * @author  Mati Kochen <https://github.com/kochen>
+ * @package Nooku\Component\Todo
  */
-class plgFinderTodo extends PlgKoowaFinder
+class ComTodoControllerTask extends ComKoowaControllerModel
 {
     /**
      * Initializes the default configuration for the object
@@ -23,13 +22,12 @@ class plgFinderTodo extends PlgKoowaFinder
      * Called from {@link __construct()} as a first step of object instantiation.
      *
      * @param   KObjectConfig $config Configuration options
-     * @return  void
+     * @return void
      */
     protected function _initialize(KObjectConfig $config)
     {
         $config->append(array(
-            'context'  => 'Todo',
-            'entity'   => 'task',
+            'formats'   => array('csv'),
         ));
 
         parent::_initialize($config);

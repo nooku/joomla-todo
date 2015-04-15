@@ -13,15 +13,14 @@ defined('KOOWA') or die; ?>
 <?= helper('bootstrap.load', array('javascript' => true)); ?>
 <?= helper('behavior.koowa'); ?>
 
-<ktml:style src="media://koowa/com_koowa/css/koowa.css" />
-<ktml:style src="media://com_todo/css/admin.css" />
+<ktml:style src="media://koowa/com_koowa/css/admin.css" />
 
 <ktml:module position="submenu">
     <ktml:toolbar type="menubar">
 </ktml:module>
 
 <ktml:module position="toolbar">
-    <ktml:toolbar type="actionbar" title="COM_TODO_SUBMENU_ACTIVITIES" icon="item icon-stack">
+    <ktml:toolbar type="actionbar" title="COM_TODO_SUBMENU_ACTIVITIES" icon="task icon-stack">
 </ktml:module>
 
 <div class="todo-container">

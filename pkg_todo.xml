@@ -14,7 +14,7 @@
 
     <files>
         <file type="component" id="com_todo">administrator/components</file>
-        <file type="module" id="mod_todo_items">site/modules</file>
+        <file type="module" id="mod_todo_tasks">site/modules</file>
         <file type="plugin" id="todo" group="finder">plugins/finder/todo</file>
     </files>
 </extension>
