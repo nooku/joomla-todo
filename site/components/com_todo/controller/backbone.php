@@ -6,4 +6,4 @@
  * Time: 4:55 PM
  */
 
-class ComTodoControllerApp extends KControllerView {}
+class ComTodoControllerBackbone extends KControllerView {}

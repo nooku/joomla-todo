@@ -59,9 +59,9 @@
                 if(settings.data != undefined) {
 
                     var data = Backbone.$.parseJSON(settings.data);
-                    data.csrf_token = '<?= object('user')->getSession()->getToken() ?>';
+              //      data.csrf_token = '<?= object('user')->getSession()->getToken() ?>';
 
-                    settings.data = JSON.stringify(data);
+                  //  settings.data = JSON.stringify(data);
 
                 }
             }
