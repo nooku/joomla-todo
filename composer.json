@@ -13,6 +13,10 @@
     {
       "type": "vcs",
       "url": "/home/vagrant/Projects/joomla-todo"
+    },
+    {
+	  "type": "vcs",
+      "url": "https://github.com/nooku/nooku-framework-joomla"
     }
   ],
     "homepage": "https://github.com/nooku/joomla-todo",
@@ -24,7 +28,7 @@
         }
     ],
     "require": {
-        "nooku/nooku-framework": "~2.0",
+        "nooku/nooku-framework-joomla": "dev-develop",
         "nooku/nooku-activities": "~2.0",
         "nooku/joomla-basicauth": "~1.0"
     }
