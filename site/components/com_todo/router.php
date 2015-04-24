@@ -68,6 +68,7 @@ function TodoParseRoute($segments)
 
     if(isset($segments[1])) {
         $vars['id'] = $segments[1];
+        $vars['view'] = KStringInflector::singularize($segments[0]);
     }
 
     $menu = JFactory::getApplication()->getMenu()->getActive();
