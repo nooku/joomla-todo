@@ -1,26 +1,19 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: CAMERON
- * Date: 23/04/2015
- * Time: 7:04 AM
+ * Todo - a Joomla example extension built with Nooku Framework.
+ *
+ * @package     Todo
+ * @copyright   Copyright (C) 2011 - 2014 Timble CVBA. (http://www.timble.net)
+ * @license     GNU GPLv3 <http://www.gnu.org/licenses/gpl.html>
+ * @link        https://github.com/nooku/joomla-todo for the canonical source repository
  */
-
-class ComTodoViewTasksJson extends KViewJson
+class ComTodoViewTasksJson extends ComTodoViewTaskJson
 {
-
-    function _actionRender($context)
-    {
-        if(!$this->_content)
-        {
-            // set the content of the view.
-            $this->_content = $this->_renderData();
-        }
-
-        return parent::_actionRender($context);
-    }
-
-    function _renderData()
+    /**
+     * Get the entity list as an array
+     * @return array
+     */
+    protected function _renderData()
     {
 
         $data = $this->getModel()->fetch();

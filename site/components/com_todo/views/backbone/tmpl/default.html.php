@@ -1,9 +1,11 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: CAMERON
- * Date: 4/03/2015
- * Time: 4:58 PM
+ * Todo - a Joomla example extension built with Nooku Framework.
+ *
+ * @package     Todo
+ * @copyright   Copyright (C) 2011 - 2014 Timble CVBA. (http://www.timble.net)
+ * @license     GNU GPLv3 <http://www.gnu.org/licenses/gpl.html>
+ * @link        https://github.com/nooku/joomla-todo for the canonical source repository
  */
 ?>
 <section id="todoapp">
@@ -51,22 +53,7 @@
 <script data-inline src="media://com_todo/todomvc-common/base.js"></script>
 <script data-inline src="media://com_todo/backbone/js/underscore.js"></script>
 <script data-inline src="media://com_todo/backbone/js/backbone.js"></script>
-<script data-inline>
-        Backbone.$.ajaxSetup({
-
-            beforeSend: function(xhr, settings){
-
-                if(settings.data != undefined) {
-
-                    var data = Backbone.$.parseJSON(settings.data);
-              //      data.csrf_token = '<?= object('user')->getSession()->getToken() ?>';
-
-                  //  settings.data = JSON.stringify(data);
-
-                }
-            }
-        });
-</script>
+<script data-inline src="media://com_todo/backbone/js/csrf.js"></script>
 <script data-inline src="media://com_todo/backbone/js/models/todo.js"></script>
 <script data-inline src="media://com_todo/backbone/js/collections/todos.js"></script>
 <script data-inline src="media://com_todo/backbone/js/views/todo-view.js"></script>
