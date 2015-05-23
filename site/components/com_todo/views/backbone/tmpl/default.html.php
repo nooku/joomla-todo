@@ -55,6 +55,7 @@ defined('KOOWA') or die; ?>
 
 <script data-inline src="media://com_todo/lib/backbone/js/underscore.js"></script>
 <script data-inline src="media://com_todo/lib/backbone/js/backbone.js"></script>
+<script data-inline src="media://com_todo/lib/backbone/js/csrf.js"></script>
 <script data-inline src="media://com_todo/lib/backbone/localstorage/backbone.localStorage.js"></script>
 <script data-inline src="media://com_todo/lib/backbone/js/models/todo.js"></script>
 <script data-inline src="media://com_todo/lib/backbone/js/collections/todos.js"></script>
