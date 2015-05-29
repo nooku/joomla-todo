@@ -35,7 +35,6 @@ function TodoBuildRoute(&$query)
             $query['Itemid'] = $items[0]->id;
         }
 
-
     }
 
     if(isset($query['view']))

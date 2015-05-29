@@ -1,5 +1,7 @@
 # Joomla Todo component
 
+[![Codacy Badge](https://www.codacy.com/project/badge/59e4bde131224ecca061404135c41f36)](https://www.codacy.com/app/timble/joomla-todo)
+
 ## What is Joomla Todo?
 
 Joomla Todo is an example component for the [Nooku Framework](https://github.com/nooku/nooku-framework). It's a simple todo list solution with logging support.
